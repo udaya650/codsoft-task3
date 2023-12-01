@@ -1,0 +1,57 @@
+<html>
+    
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="calculator.css">
+    <script src="https://kit.fontawesome.com/6b2f644feb.js" crossorigin="anonymous"></script>
+    <title>Calculator</title>
+</head>
+
+<body>
+    <div class="bg-container">
+        <div class="calculator-main-frame">
+            <div class="result-frame" id=resultFrame>
+            </div>
+            <div class="calculator-first-row">
+                <button class="btn sym1 m-2" id="openBracket" onclick="displayValueOB()" value=(>(</button>
+                <button class="btn sym1 m-2" id="closeBracket" onclick="displayValueCB()" value=)>)</button>
+                <button class="btn sym1 m-2" id="ans" value="ans">ans</button>
+                <button class="btn sym1 m-2" id="del" onclick="delLastElement()" value="del">del</button>
+                <button class="btn sym1 m-2" id="clear" onclick="clearAllElements()" value="clear">clear</button>
+            </div>
+            <div class="calculator-first-row">
+                <button class="btn num1 m-2" id="seven" onclick="displayValue7()" value=7>7</button>
+                <button class="btn num1 m-2" id="eight" onclick="displayValue8()" value=8>8</button>
+                <button class="btn num1 m-2" id="nine" onclick="displayValue9()" value=9>9</button>
+                <button class="btn sym2 m-2" id="mod" onclick="displayValueModule()" value=%>%</button>
+                <button class="btn sym2 m-2" id="squareRoot" onclick="displayValueSR()" value="√">√</button>
+            </div>
+            <div class="calculator-first-row">
+                <button class="btn num1 m-2" id="four" onclick="displayValue4()" value=4>4</button>
+                <button class="btn num1 m-2" id="five" onclick="displayValue5()" value=5>5</button>
+                <button class="btn num1 m-2" id="six" onclick="displayValue6()" value=6>6</button>
+                <button class="btn sym2 m-2" id="multiplication" onclick="displayValueMul()" value=x>x</button>
+                <button class="btn sym2 m-2" id="division" onclick="displayValueDivide()" value=÷>÷</button>
+            </div>
+            <div class="calculator-first-row">
+                <button class="btn num1 m-2" id="one" onclick="displayValue1()" value=1>1</button>
+                <button class="btn num1 m-2" id="two" onclick="displayValue2()" value=2>2</button>
+                <button class="btn num1 m-2" id="three" onclick="displayValue3()" value=3>3</button>
+                <button class="btn sym2 m-2" id="addition" onclick="displayValueAdd()" value=+>+</button>
+                <button class="btn sym2 m-2" id="subtraction" onclick="displayValueSub()" value=->-</button>
+            </div>
+            <div class="calculator-first-row">
+                <button class="btn sym2 m-2" id="decimal" onclick="displayValueDot()" value=.>.</button>
+                <button class="btn num1 m-2" id="zero" onclick="displayValue0()" value=0>0</button>
+                <button class="btn sym2 m-2" id="doubleZero" onclick="displayValue00()" value=00>00</button>
+                <button class="btn sym3 m-2" id="enter" onclick="calculatingItems()" value=enter>ENTER</button>
+            </div>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+
+</html>
